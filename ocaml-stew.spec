@@ -6,15 +6,15 @@ Release:	2
 License:	LGPL
 Group:		Libraries
 Vendor:		Shawn Wagner <shawnw@speakeasy.org>
-URL:		http://raevnos.pennmush.org/code/ocaml.html
 Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
 # Source0-md5:	7e822ca90a5265a2f1b94e81add6eb4c
+URL:		http://raevnos.pennmush.org/code/ocaml.html
 BuildRequires:	autoconf
-BuildRequires:	ocaml-pcre-devel
-BuildRequires:	ocaml-findlib >= 0.7.2
 BuildRequires:	ocaml >= 3.07
-%requires_eq	ocaml-runtime
+BuildRequires:	ocaml-findlib >= 0.7.2
+BuildRequires:	ocaml-pcre-devel
 %requires_eq	ocaml-pcre
+%requires_eq	ocaml-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -72,8 +72,8 @@ rm -f *.cma
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_libdir}/ocaml/{stublibs,site-lib/stew}
+
 ln -s ../stublibs $RPM_BUILD_ROOT%{_libdir}/ocaml/site-lib
 
 %{__make} install \
@@ -91,10 +91,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS README
 %attr(755,root,root) %{_libdir}/ocaml/stublibs/*.so
 
 %files devel
 %defattr(644,root,root,755)
-%doc LICENSE README AUTHORS html
+%doc html/*
 %{_libdir}/ocaml/stew
 %{_libdir}/ocaml/site-lib/stew
