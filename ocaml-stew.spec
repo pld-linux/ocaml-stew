@@ -7,7 +7,9 @@ License:	LGPL
 Group:		Libraries
 Vendor:		Shawn Wagner <shawnw@speakeasy.org>
 URL:		http://raevnos.pennmush.org/code/ocaml.html
-Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
+#Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
+Source0:	stew-%{version}.tar.gz
+# Source0-md5:	e952d144e10b4458aff1fe4f7b8dfd13
 BuildRequires:	autoconf
 BuildRequires:	ocaml-findlib >= 0.7.2
 BuildRequires:	ocaml >= 3.05
