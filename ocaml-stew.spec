@@ -60,7 +60,7 @@ tej biblioteki.
 %setup -q -n stew-%{version}
 
 %build
-autoconf
+%{__autoconf}
 %configure
 %{__make} all opt
 rm -f *.cma
