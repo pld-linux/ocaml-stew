@@ -1,7 +1,7 @@
 Summary:	A stew of OCaml utility function
 Summary(pl):	Zbiór funkcji narzêdziowych dla OCamla
 Name:		ocaml-stew
-Version:	0.9.0
+Version:	0.10.0
 Release:	1
 License:	LGPL
 Group:		Libraries
@@ -9,7 +9,8 @@ Vendor:		Shawn Wagner <shawnw@speakeasy.org>
 URL:		http://raevnos.pennmush.org/code/ocaml.html
 Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
 BuildRequires:	autoconf
-BuildRequires:	ocaml >= 3.04-7
+BuildRequires:	ocaml-findlib >= 0.7.2
+BuildRequires:	ocaml >= 3.05
 %requires_eq	ocaml-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -69,7 +70,8 @@ rm -f *.cma
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_libdir}/ocaml/site-lib/stew
+install -d $RPM_BUILD_ROOT%{_libdir}/ocaml/{stublibs,site-lib/stew}
+ln -s ../stublibs $RPM_BUILD_ROOT%{_libdir}/ocaml/site-lib
 
 %{__make} install \
 	CAMLLIB=$RPM_BUILD_ROOT%{_libdir}/ocaml \
@@ -81,22 +83,15 @@ mv -f $RPM_BUILD_ROOT%{_libdir}/ocaml/stew/META \
 	$RPM_BUILD_ROOT%{_libdir}/ocaml/site-lib/stew
 rm -f $RPM_BUILD_ROOT%{_libdir}/ocaml/stew/*.mli
 
-(cd $RPM_BUILD_ROOT%{_libdir}/ocaml && ln -s stew/dll*.so .)
-
-gzip -9nf LICENSE README AUTHORS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{_libdir}/ocaml/stew
-%attr(755,root,root) %{_libdir}/ocaml/stew/*.so
-%{_libdir}/ocaml/*.so
+%attr(755,root,root) %{_libdir}/ocaml/stublibs/*.so
 
 %files devel
 %defattr(644,root,root,755)
-%doc *.gz stew.html
-%{_libdir}/ocaml/stew/*.cm[ixa]*
-%{_libdir}/ocaml/stew/*.a
+%doc LICENSE README AUTHORS stew.html
+%{_libdir}/ocaml/stew
 %{_libdir}/ocaml/site-lib/stew
