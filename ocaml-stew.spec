@@ -8,6 +8,7 @@ Group:		Libraries
 Vendor:		Shawn Wagner <shawnw@speakeasy.org>
 URL:		http://raevnos.pennmush.org/code/ocaml.html
 Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
+BuildRequires:	autoconf
 BuildRequires:	ocaml >= 3.04-7
 %requires_eq	ocaml-runtime
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
