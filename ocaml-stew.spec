@@ -1,15 +1,14 @@
 Summary:	A stew of OCaml utility function
 Summary(pl):	Zbiór funkcji narzêdziowych dla OCamla
 Name:		ocaml-stew
-Version:	0.10.0
+Version:	0.12.0
 Release:	1
 License:	LGPL
 Group:		Libraries
 Vendor:		Shawn Wagner <shawnw@speakeasy.org>
 URL:		http://raevnos.pennmush.org/code/ocaml.html
-#Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
-Source0:	stew-%{version}.tar.gz
-# Source0-md5:	e952d144e10b4458aff1fe4f7b8dfd13
+Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
+# Source0-md5:	7e822ca90a5265a2f1b94e81add6eb4c
 BuildRequires:	autoconf
 BuildRequires:	ocaml-findlib >= 0.7.2
 BuildRequires:	ocaml >= 3.05
