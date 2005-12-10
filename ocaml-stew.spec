@@ -2,7 +2,7 @@ Summary:	A stew of OCaml utility function
 Summary(pl):	Zbiór funkcji narzêdziowych dla OCamla
 Name:		ocaml-stew
 Version:	0.12.0
-Release:	5
+Release:	6
 License:	LGPL
 Group:		Libraries
 Vendor:		Shawn Wagner <shawnw@speakeasy.org>
