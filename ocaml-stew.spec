@@ -1,9 +1,9 @@
-%define		ocaml_ver	1:3.09.1
+%define		ocaml_ver	1:3.09.2
 Summary:	A stew of OCaml utility function
 Summary(pl):	Zbiór funkcji narzêdziowych dla OCamla
 Name:		ocaml-stew
 Version:	0.12.0
-Release:	8
+Release:	9
 License:	LGPL
 Group:		Libraries
 Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
