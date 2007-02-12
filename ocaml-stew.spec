@@ -1,6 +1,6 @@
 %define		ocaml_ver	1:3.09.2
 Summary:	A stew of OCaml utility function
-Summary(pl):	Zbiór funkcji narzêdziowych dla OCamla
+Summary(pl.UTF-8):   ZbiÃ³r funkcji narzÄ™dziowych dla OCamla
 Name:		ocaml-stew
 Version:	0.12.0
 Release:	9
@@ -26,18 +26,18 @@ classification routines that are locale-dependant.
 This package contains files needed to run bytecode executables using
 this library.
 
-%description -l pl
-Stew jest ogólnego u¿ytku bibliotek± u¿ytecznych funkcji narzêdziowych
-i rozszerzeñ. Zawiera generatory i dystrybucje liczb losowych,
+%description -l pl.UTF-8
+Stew jest ogÃ³lnego uÅ¼ytku bibliotekÄ… uÅ¼ytecznych funkcji narzÄ™dziowych
+i rozszerzeÅ„. Zawiera generatory i dystrybucje liczb losowych,
 wsparcie dla lokalizacji, ulepszone drukowanie czasu, oraz funkcje
-klasyfikacji znaków (<ctype.h>), które s± zale¿ne od locale.
+klasyfikacji znakÃ³w (<ctype.h>), ktÃ³re sÄ… zaleÅ¼ne od locale.
 
-Pakiet ten zawiera binaria potrzebne do uruchamiania programów
-u¿ywaj±cych tej biblioteki.
+Pakiet ten zawiera binaria potrzebne do uruchamiania programÃ³w
+uÅ¼ywajÄ…cych tej biblioteki.
 
 %package devel
 Summary:	A stew of OCaml utility function - development part
-Summary(pl):	Zbiór funkcji narzêdziowych dla OCamla - cze¶æ programistyczna
+Summary(pl.UTF-8):   ZbiÃ³r funkcji narzÄ™dziowych dla OCamla - czeÅ›Ä‡ programistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %requires_eq	ocaml
@@ -51,13 +51,13 @@ classification routines that are locale-dependant.
 This package contains files needed to develop OCaml programs using
 this library.
 
-%description devel -l pl
-Stew jest ogólnego u¿ytku bibliotek± u¿ytecznych funkcji narzêdziowych
-i rozszerzeñ. Zawiera generatory i dystrybucje liczb losowych,
+%description devel -l pl.UTF-8
+Stew jest ogÃ³lnego uÅ¼ytku bibliotekÄ… uÅ¼ytecznych funkcji narzÄ™dziowych
+i rozszerzeÅ„. Zawiera generatory i dystrybucje liczb losowych,
 wsparcie dla lokalizacji, ulepszone drukowanie czasu, oraz funkcje
-klasyfikacji znaków (<ctype.h>), które s± zale¿ne od locale.
+klasyfikacji znakÃ³w (<ctype.h>), ktÃ³re sÄ… zaleÅ¼ne od locale.
 
-Pakiet ten zawiera pliki niezbêdne do tworzenia programów u¿ywaj±cych
+Pakiet ten zawiera pliki niezbÄ™dne do tworzenia programÃ³w uÅ¼ywajÄ…cych
 tej biblioteki.
 
 %prep
