@@ -1,6 +1,6 @@
 %define		ocaml_ver	1:3.09.2
 Summary:	A stew of OCaml utility function
-Summary(pl.UTF-8):   Zbiór funkcji narzędziowych dla OCamla
+Summary(pl.UTF-8):	Zbiór funkcji narzędziowych dla OCamla
 Name:		ocaml-stew
 Version:	0.12.0
 Release:	9
@@ -37,7 +37,7 @@ używających tej biblioteki.
 
 %package devel
 Summary:	A stew of OCaml utility function - development part
-Summary(pl.UTF-8):   Zbiór funkcji narzędziowych dla OCamla - cześć programistyczna
+Summary(pl.UTF-8):	Zbiór funkcji narzędziowych dla OCamla - cześć programistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %requires_eq	ocaml
