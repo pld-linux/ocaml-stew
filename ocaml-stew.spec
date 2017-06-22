@@ -11,7 +11,7 @@ Summary:	A stew of OCaml utility function
 Summary(pl.UTF-8):	Zbiór funkcji narzędziowych dla OCamla
 Name:		ocaml-stew
 Version:	0.12.0
-Release:	22
+Release:	23
 License:	LGPL
 Group:		Libraries
 Source0:	http://raevnos.pennmush.org/code/stew-%{version}.tar.gz
